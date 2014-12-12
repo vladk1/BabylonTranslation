@@ -1,0 +1,70 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#d9d9d9"
+    android:orientation="vertical"
+    tools:context=".MainActivity" >
+
+    <RelativeLayout
+        android:id="@+id/bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent" >
+
+        <android.support.v4.view.ViewPager
+            android:id="@+id/user_pager"
+            android:layout_width="fill_parent"
+            android:layout_height="match_parent"
+            android:layout_above="@+id/edge_glow"
+            android:layout_marginBottom="15dp"
+            android:divider="@null"
+            android:dividerHeight="10dp"
+            android:stackFromBottom="true"
+            android:transcriptMode="alwaysScroll" />
+
+        <!-- Scroll View or List View for chat goes here -->
+
+        <ImageView
+            android:id="@+id/edge_glow"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:src="@drawable/edge_glow_blue" />
+
+         <EditText
+            android:id="@+id/write_message_field"
+            android:layout_width="fill_parent"
+       	    android:layout_height="wrap_content"  
+        	android:layout_alignParentBottom="true"
+        	android:visibility="gone"
+        	android:inputType="text" >
+
+        </EditText>
+
+        <ImageView
+            android:id="@+id/microphone_btn"
+            android:layout_width="80dp"
+        	android:layout_height="80dp"     
+			android:src="@drawable/ic_action_mic"
+			android:background="@drawable/mic_btn_selector_blue"
+			android:layout_alignParentBottom="true"
+			android:layout_centerHorizontal="true"
+			android:layout_marginBottom="@dimen/activity_vertical_margin"
+			android:clickable="true"
+			android:onClick="onClick" />
+        
+        <ImageButton 
+	  	    android:id = "@+id/keyboard_btn"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_toRightOf="@id/microphone_btn"
+	  	    android:layout_alignBottom="@id/microphone_btn"
+	  	    android:layout_marginLeft="30dp"
+	  	    android:background="@drawable/ic_action_keyboard"
+	  	    android:onClick="onClick"
+  	    />
+
+    </RelativeLayout>
+
+</LinearLayout>

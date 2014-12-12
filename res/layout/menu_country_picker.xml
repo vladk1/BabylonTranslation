@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+    
+    <Button
+        android:id="@+id/doneButton"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content" 
+        android:text="Done"/>
+    
+     <ListView
+         android:id="@+id/swipableCountryList"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        >
+        
+    </ListView>
+    
+    <AutoCompleteTextView
+         android:id="@+id/inputText"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+        >
+        
+    </AutoCompleteTextView>
+    
+    <ListView
+         android:id="@+id/countryList"
+         android:layout_width="fill_parent"
+         android:layout_height="wrap_content"
+        >
+        
+    </ListView>
+    
+
+</LinearLayout>

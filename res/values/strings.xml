@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Babylon</string>
+    <string name="action_settings">Settings</string>
+    <string name="action_add_people">Add Person</string>
+    <string name="action_edit_name">Edit Name</string>
+    <string name="action_country_list">Dialog Language List</string>
+    <string name="hello_world">Hello world!</string>
+    <string-array name="lang_code">
+       <item>en</item> 
+       <item>ru</item>
+    </string-array>
+    
+    
+    <string-array name="languages">
+        <item>English</item> 
+        <item>Russian</item>
+    </string-array>
+    
+    
+    
+</resources>

@@ -1,0 +1,25 @@
+<resources>
+
+    <!--
+        Base application theme for API 11+. This theme completely replaces
+        AppBaseTheme from res/values/styles.xml on API 11+ devices.
+    -->
+   <style name="BabylonBaseTheme" parent="android:Theme.Holo.Light">
+        <!-- API 14 theme customizations can go here. -->
+       
+    </style>
+    
+    <style name="BabylonChatTheme" parent="BabylonBaseTheme">
+      	<item name="android:windowActionBarOverlay">true</item>
+      	<item name="android:actionBarStyle">@style/action_bar_translucent</item>
+    </style>
+
+    <style name="action_bar_translucent" parent="@android:style/Widget.Holo.ActionBar">
+	    <item name="android:background">#5D000000</item>
+		<item name="android:titleTextStyle">@style/actionBar_titleTextStyle</item>	    
+	</style>
+	
+    <style name="actionBar_titleTextStyle" parent="@android:style/TextAppearance.Holo.Widget.ActionBar.Title">
+    <item name="android:textColor">@android:color/white</item>
+  </style>
+</resources>

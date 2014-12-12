@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+        android:id="@+id/header"
+	    android:layout_width="wrap_content"
+	    android:layout_height="wrap_content" >
+	    
+	     <ImageView
+	        android:id = "@+id/language_banner"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"       
+			android:src="@drawable/header_en"
+	         />
+    
+  		<TextView
+	        android:id="@+id/language_text"
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:layout_alignLeft="@+id/language_banner"
+	        android:layout_alignTop="@+id/language_banner"
+	        android:layout_alignRight="@+id/language_banner"
+	        android:layout_alignBottom="@+id/language_banner"
+	        android:gravity="center"
+	        android:text="English"
+	        android:textSize="70sp"
+	        android:textColor="#EDFFFFFF" 
+        />
+	    
+	   <ImageView
+	  	    android:id="@+id/back_btn"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_alignParentLeft="true"
+	  	    android:layout_centerVertical="true"
+	  	    android:clickable="true"
+	  	    android:src="@drawable/ic_back" />
+
+  		<ImageView
+	  	    android:id="@+id/next_btn"
+	  	    android:layout_width="wrap_content"
+	  	    android:layout_height="wrap_content"
+	  	    android:layout_alignParentRight="true"
+	  	    android:layout_centerVertical="true"
+	  	    android:clickable="true"
+	  	    android:src="@drawable/ic_next" />
+	    
+	</RelativeLayout>
+	
